@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Publishing dist to github pages
+
+#### Step 1: Commit dist
+Generate dist using **ng build** and commit using **git add dist && git commit -m "<commit message>"**
+
+#### Step 2: Push the commit
+Push the commit using **git subtree push --prefix dist origin gh-pages**
