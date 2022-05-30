@@ -29,8 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Publishing dist to github pages
 
-#### Step 1: Commit dist
-Generate dist using **ng build** and commit using **git add dist && git commit -m "<commit message>"**
+#### Step 1: Create dist
+Generate dist using **ng build --output-path docs --base-href /apps/**
 
-#### Step 2: Push the commit
-Push the commit using **git subtree push --prefix dist origin gh-pages**
+#### Step 2: Change files
+Change the files generated in docs folder. Change base in index.html and make it /apps/
+Create a 404.html and copy the content of index.html
+
+#### Step 3: Push the builds
+Push the files using **gh-pages -d docs**
