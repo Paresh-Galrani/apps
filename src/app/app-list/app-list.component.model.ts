@@ -4,4 +4,6 @@ export interface AppItem {
   background: string;
   subheading:string;
   color: string;
+  isActive: boolean;
+  link: string;
 }
