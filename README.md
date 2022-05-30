@@ -33,8 +33,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Generate dist using **ng build --output-path docs --base-href /apps/**
 
 #### Step 2: Change files
-Change the files generated in docs folder. Change base in index.html and make it /apps/
+Change the files generated in docs folder. Change base in index.html and make it /apps/ .
 Create a 404.html and copy the content of index.html
 
 #### Step 3: Push the builds
-Push the files using **gh-pages -d docs**
+Push the files using **gh-pages -d docs**. Add the previous command in deploy script and run **npm run deploy**
