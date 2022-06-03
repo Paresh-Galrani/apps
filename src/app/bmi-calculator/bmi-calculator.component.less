@@ -10,13 +10,47 @@ main {
   background: transparent;
 }
 
+.card button.btn {
+  background-color: var(--bs-success) !important;
+}
+
+.card button.btn.btn-outline-warning {
+  background-color: transparent !important;
+}
+
+.card button.btn.btn-outline-warning:hover,
+.card button.btn.btn-outline-warning:focus {
+  color: #fff;
+}
+
+.dropdown-menu.dropdown-menu-end {
+  background-color: var(--bs-pink);
+}
+
+.dropdown-menu.dropdown-menu-end .dropdown-item{
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-menu.dropdown-menu-end li:hover {
+  background-color: var(--bs-cyan);
+}
+
+.modal-content  {
+  color: #000 !important;
+}
+
+.card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(244, 71, 244, 0.8);
+}
+
 .card.categories ul li {
-  padding: .5rem;
+  padding: .5rem 2rem;
   text-align: left;
   font-size: 1.1rem;
   color: #fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .card .under {
@@ -39,4 +73,66 @@ main {
 
 .card .semi-obese {
   background-color: var(--bs-orange);
+}
+
+.card .form-group {
+  text-align: left;
+}
+
+.card .form-group label {
+  margin-bottom: .25rem;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bdbdbd;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #bdbdbd;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #bdbdbd;
+}
+
+.form-check-input:checked {
+  border-color: #fff;
+}
+
+#male.form-check-input:checked {
+  background-color: rgb(0, 191, 255) !important;
+}
+
+#female.form-check-input:checked {
+  background-color: rgb(248, 0, 211) !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  // border-color: rgba(255, 128, 0, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(244, 71, 244, 0.8);
+  color: #fff;
+}
+
+input {
+  color: #fff;
 }

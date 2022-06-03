@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { AppListComponent } from './app-list/app-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,15 @@ import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.componen
     BmiCalculatorComponent
   ],
   imports: [
+    CommonModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[
+    FormsModule,
+  ]
 })
 export class AppModule { }
