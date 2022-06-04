@@ -44,7 +44,7 @@ export class AppListComponent implements OnInit {
       {link: '',isActive: false, color:'text-white',subheading:'Alert & Notification boxes', background: 'cyan', name: 'Alert & Notification', description: 'Alert & Notification' },
       {link: '',isActive: false, color:'text-white',subheading:'Website Preloader Implementation', background: 'teal', name: 'Website Preloader', description: 'Website Preloader Implementation' },
       {link: '',isActive: false, color:'text-white',subheading:'Temperature Converter', background: 'green', name: 'Temperature Converter', description: 'Temperature Converter' },
-      {link: '',isActive: false, color:'text-white',subheading:'Character Counter based on text', background: 'indigo', name: 'Character Counter', description: 'Character Counter' },
+      {link: '/character-counter',isActive: true, color:'text-white',subheading:'Character Counter based on text', background: 'indigo', name: 'Character Counter', description: 'Character Counter' },
       {link: '',isActive: false, color:'text-white',subheading:'Age Calculator(Years/Months/Day)', background: 'orange', name: 'Age Calculator', description: 'Age Calculator(Years/Months/Day)' },
       {link: '',isActive: false, color:'text-white',subheading:'Length Converter (KM, M, CM, etc.)', background: 'pink', name: 'Length Converter', description: 'Length Converter App(KM, M, CM, etc.)' },
       {link: '',isActive: false, color:'text-white',subheading:'Auto Image Change Of The Background After A Defined Time', background: 'blue', name: 'Auto Image Change', description: 'Auto Image Change Of The Background After A Defined Time' },

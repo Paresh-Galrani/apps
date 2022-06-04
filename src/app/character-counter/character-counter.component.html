@@ -1,0 +1,23 @@
+<div class="d-flex h-100 text-center flex-column">
+  <header class="mb-auto mx-auto py-2 px-4  w-100">
+    <a routerLink="/home" class="back btn-sm float-start btn btn-link-outline">Back</a>
+    <h3 class="mb-0 pb-1">Character counter</h3>
+  </header>
+  <main class="h-100 p-2 container">
+    <textarea class="form-control" (keyup)="onKeyUp()" [(ngModel)]="characters" style="resize: none;"
+      rows="18"></textarea>
+      <div class="d-flex justify-content-end flex-row my-2">
+        <button class="btn btn-secondary me-2" (click)="clear()">Clear text</button>
+        <button class="btn btn-primary" (click)="count()">Count characters</button>
+      </div>
+    <div class="d-flex mt-2 flex-column align-items-start" *ngIf="totalCharacters">
+      <p class="lead">Total characters are: <span class="h3">{{totalCharacters}}</span></p>
+      <p class="lead">Total actual characters are: <span class="h5">{{totalCharacters - totalSpaces}}</span></p>
+      <p class="lead">Total space characters are: <span class="h5">{{totalSpaces}}</span></p>
+    </div>
+  </main>
+  <footer class="mt-auto text-white-50 p-2">
+    <p>Copyrights 2022, by <a href="https://paresh-galrani.github.io/profile/" class="text-white">Paresh Galrani</a>.
+    </p>
+  </footer>
+</div>

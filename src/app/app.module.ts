@@ -8,13 +8,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { CharacterCounter } from './character-counter/character-counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppListComponent,
     PageNotFoundComponent,
-    BmiCalculatorComponent
+    BmiCalculatorComponent,
+    CharacterCounter
   ],
   imports: [
     CommonModule,
