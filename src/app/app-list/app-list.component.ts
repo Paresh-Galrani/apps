@@ -34,6 +34,7 @@ export class AppListComponent implements OnInit {
       {link: '',isActive: false, color:'text-white',subheading:'Responsive NavBar (Hamburger Button)', background: 'pink', name: 'Responsive NavBar', description: 'Responsive NavBar (Hamburger Button)' },
       {link: '',isActive: false, color:'text-white',subheading:'Random Password Generator', background: 'red', name: 'Password Generator', description: 'Random Password Generator' },
       {link: '/bmi',isActive: true, color:'text-white',subheading:'Body Mass Index Calculator', background: 'yellow', name: 'BMI Calculator', description: 'Body Mass Index Calculator' },
+      {link: '/video-thumb',isActive: true, color:'text-white', subheading:'Grab Thumbnail From Video', background: 'pink', name: 'Video Thumbnail', description: 'Grab Thumbnail From Video' },
       {link: '',isActive: false, color:'text-white',subheading:'Notes App', background: 'orange', name: 'Notes App', description: 'Notes App' },
       {link: '',isActive: false, color:'text-white',subheading:'To-Do App', background: 'gray', name: 'To-Do App', description: 'To-Do App' },
       {link: '',isActive: false, color:'text-white',subheading:'Calculator App', background: 'purple', name: 'Calculator App', description: 'Calculator App' },

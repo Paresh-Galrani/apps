@@ -1,0 +1,27 @@
+<div class="d-flex h-100 text-center flex-column">
+  <header class="mb-auto mx-auto py-2 px-4  w-100">
+    <a routerLink="/home" class="back btn-sm float-start btn btn-link-outline">Back</a>
+    <h3 class="mb-0 pb-1">Character counter</h3>
+  </header>
+  <main class="h-100 p-2 container">
+    <div class="w-100 d-flex align-items-center mb-4">
+      <div class="form-group d-flex align-items-center w-75 me-4">
+        <input type="file" (change)="onFileSelect($event)" [accept]="'video/*'">
+      </div>
+    </div>
+
+    <div style="height: 200px; width: 340px;" *ngIf="url">
+      <video #videoElement controls  style="height: 100%; width: 100%;" [src]="url"></video>
+      <button class="d-flex btn btn-primary mt-3" (click)="convert()">Convert</button>
+    </div>
+    <canvas  #canvasElement id="canvas" style="display: none;"></canvas> 
+
+    <div *ngIf="imgSrc" style="height: 400px; width: 600px;" class="mt-4">
+      <img style="height: 100%; width: 100%; object-fit: content;" [src]="imgSrc" alt="">
+    </div>
+  </main>
+  <footer class="mt-auto text-white-50 p-2">
+    <p>Copyrights 2022, by <a href="https://paresh-galrani.github.io/profile/" class="text-white">Paresh Galrani</a>.
+    </p>
+  </footer>
+</div>

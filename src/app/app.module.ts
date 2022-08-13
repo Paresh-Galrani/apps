@@ -9,6 +9,7 @@ import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.componen
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { CharacterCounter } from './character-counter/character-counter.component';
+import { VideoThumbnailComponent } from './video-thumbnail/video-thumbnail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CharacterCounter } from './character-counter/character-counter.componen
     AppListComponent,
     PageNotFoundComponent,
     BmiCalculatorComponent,
-    CharacterCounter
+    CharacterCounter,
+    VideoThumbnailComponent
   ],
   imports: [
     CommonModule,
